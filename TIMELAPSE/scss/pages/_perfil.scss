@@ -1,0 +1,110 @@
+// Página de perfil - Sobrescribe el max-width de 420px del reset para verse bien en desktop
+.page__main--perfil {
+    justify-content: center;
+    max-width: 650px !important; // Sobrescribe el max-width de 420px para desktop
+}
+
+// Card de perfil
+.card--perfil {
+    padding: 45px 35px;
+    width: 100%;
+}
+
+// Título principal
+.perfil-title {
+    color: $color-primary;
+    font-size: $font-size-xlarge;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+// Sección de usuario
+.perfil-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-xs;
+    margin-bottom: 40px;
+}
+
+.perfil-user__avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: $spacing-sm;
+}
+
+.perfil-user__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-user__name {
+    color: $color-primary;
+    font-size: $font-size-large;
+    font-weight: 600;
+    margin: 0;
+}
+
+.perfil-user__email {
+    color: $color-dark;
+    font-size: $font-size-small;
+    margin: 0;
+}
+
+// Lista de campos editables
+.perfil-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+}
+
+// Item individual
+.perfil-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px $spacing-lg;
+    background: lighten($color-accent, 8%);
+    border-radius: $border-radius-md;
+}
+
+.perfil-item__left {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+}
+
+.perfil-item__icon {
+    color: $color-primary;
+    font-size: 22px;
+}
+
+.perfil-item__label {
+    color: $color-dark;
+    font-size: $font-size-medium;
+    font-weight: 500;
+}
+
+.perfil-item__btn {
+    background: #4A9FBD;
+    color: white;
+    padding: 10px 24px;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+
+    &:hover {
+        background: darken(#4A9FBD, 8%);
+        transform: translateY(-1px);
+    }
+}
