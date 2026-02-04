@@ -11,26 +11,36 @@
         <a href="index.html">
             <img src="./img/LogoCompletoClaro-removebg-preview.png" alt="Timelapse" class="header__logo">
         </a>
-        <a href="iniciar-sesion.html" class="header__btn">Iniciar sesion</a>
     </header>
 
-    <main class="page__main">
-        <section class="card welcome">
-            <h1 class="welcome__title">BIENVENIDO A<br>TIMELAPSE</h1>
-            <a href="iniciar-sesion.html" class="welcome__btn">Iniciar sesion</a>
-            <p class="welcome__text">
-                ¿No tienes cuenta?
-                <a href="registro.html" class="link">Regístrate</a>
-            </p>
-        </section>
+    <main class="page__main page__main--login">
+        <section class="card card--login">
+            <h1 class="login__title">BIENVENIDO A<br>TIMELAPSE</h1>
+            <p class="login__subtitle">Inicia sesión para acceder a tus cápsulas del tiempo</p>
+            
+            <form class="form form--login">
+                <div class="form__group">
+                    <label for="email" class="form__label">Correo electrónico</label>
+                    <input type="email" id="email" name="email" class="form__input" placeholder="tu@email.com" required>
+                </div>
 
-        <section class="card info">
-            <p class="info__description">
-                En <strong>Timelapse</strong> puedes crear cápsulas del tiempo, guardar recuerdos, aprender de otros y explorar herramientas únicas sobre tu vida y tu historia.
-            </p>
-            <h2 class="info__title">A que esperas!</h2>
-            <p class="info__cta">
-                <a href="registro.html" class="link">Regístrate</a> para poder tener acceso a todas las herramientas de <strong>Timelapse</strong>
+                <div class="form__group">
+                    <label for="password" class="form__label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form__input" placeholder="••••••••" required>
+                </div>
+
+                <a href="#" class="login__forgot">¿Olvidaste tu contraseña?</a>
+
+                <a href="home.html" class="btn btn--submit btn--login">Iniciar sesión</a>
+            </form>
+
+            <div class="login__divider">
+                <span class="login__divider-text">o</span>
+            </div>
+
+            <p class="login__register">
+                ¿No tienes cuenta?
+                <a href="registro.html" class="link">Regístrate aquí</a>
             </p>
         </section>
     </main>

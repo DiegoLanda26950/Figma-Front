@@ -1,6 +1,7 @@
 // Bloque: welcome
 .welcome {
     margin-top: $spacing-xl;
+    padding: 50px 35px; // 👈 AÑADIR ESTA LÍNEA
 
     // Elemento: title
     &__title {
@@ -8,7 +9,7 @@
         color: $color-primary;
         font-weight: 700;
         margin-bottom: $spacing-lg;
-        line-height: 1.3;
+        line-height: 1.5;
     }
 
     // Elemento: btn
@@ -21,7 +22,7 @@
         font-weight: 600;
         font-size: $font-size-base;
         display: inline-block;
-        margin-bottom: $spacing-md;
+        margin-bottom: $spacing-xl;
         transition: all 0.3s;
 
         &:hover {
@@ -39,6 +40,9 @@
 
 // Bloque: info
 .info {
+    padding: 50px 35px; 
+    margin-top: $spacing-md;
+
     // Elemento: description
     &__description {
         color: $color-dark;
@@ -52,7 +56,7 @@
         color: $color-primary;
         font-size: 20px;
         font-weight: 700;
-        margin-bottom: $spacing-md;
+        margin-bottom: $spacing-xl;
     }
 
     // Elemento: cta

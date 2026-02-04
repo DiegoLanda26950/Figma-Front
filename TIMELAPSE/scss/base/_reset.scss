@@ -22,7 +22,7 @@
     display: flex;                      // También es un flexbox
     flex-direction: column;             // Sus hijos se apilan en columna
     gap: $spacing-md;                   // Espaciado entre hijos (15px según tus variables)
-    max-width: 420px;                   // Limita el ancho máximo a 420px (ideal para móviles/centrado)
+    max-width: 580px;                   // Limita el ancho máximo a 420px (ideal para móviles/centrado)
     width: 100%;                        // Ocupa todo el ancho disponible hasta ese máximo
     margin: 0 auto;                     // Centra horizontalmente el bloque dentro de la página
 }
