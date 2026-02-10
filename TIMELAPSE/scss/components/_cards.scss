@@ -33,8 +33,11 @@
 
     // Modificador: main
     &--main {
-        padding: $spacing-xxl 70px;         // Espaciado muy grande (40px vertical + 70px horizontal)
+        padding: 60px 70px;         // Espaciado muy grande (40px vertical + 70px horizontal)
         margin-top: $spacing-lg;            // Separación superior (20px)
+        display: flex;              // Control de layout
+        flex-direction: column;     // Elementos en columna
+        gap: 20px;
     }
 
     // Modificador: form
